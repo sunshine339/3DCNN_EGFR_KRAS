@@ -187,7 +187,6 @@ def extract_features(images_dir, genotype_csv, output_csv, model_ckpt=None):
     df_result.to_csv(output_csv, index=False)
     print(f"特征已保存到: {output_csv}")
 
-# 4. 脚本入口
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="提取CT和分割图像的3D卷积特征")
 
